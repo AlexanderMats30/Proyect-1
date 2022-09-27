@@ -20,6 +20,80 @@ body{
     background-image: url("/img/paven.png");
 }
 
+a{
+    color: #529125;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #285616;
+}
+
+.red{
+    color: #9b2422 !important;
+}
+
+.blue{
+    color: #0c73f2 !important;
+}
+/*Form*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select{
+    border: 1px solid #c9c9c9;
+    box-shadow: 0px 0px 2px #ccc inset;
+    padding:1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: gray;
+    transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -o-transition: all 300ms;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus{
+    border: 1px solid #70b231;
+    color: black;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button{
+    display: block;
+    border: 1px solid green;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    width: 60px;
+    padding: 3px;
+    background-color: #70b231;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover{
+    box-shadow: 0px 0px 2px gray;
+}
+
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active{
+    box-shadow: 0px 0px 2px gray inset;
+    text-shadow: 0px 0px 1px #ccc;
+}
 /*Header*/
 
 #header{
@@ -147,5 +221,88 @@ body{
     background-color: rgb(205, 205, 205);
 }
 
+/*Content*/
 
+#content{
+    width: 1250px;
+    min-height: 1100px;
+    margin: 0 auto;
+}
 
+/* Aside */
+#aside, #pharse{
+    width: 200px;
+    float: left;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 2px #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+}
+
+#pharse{
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#aside .widget{
+    display: block;
+    width: 180px;
+    margin: 5px auto;
+    padding: 5px 10px 0 10px;
+    font-size: 14px;
+    border-bottom: 1px dashed #333;
+}
+
+#aside .widget:last-child{
+    margin-bottom: 20px;
+}
+
+#aside h3{
+    display: block;
+    color: #333;
+    width: 100%;
+    text-align: center;
+    padding: 2px 0 2px 0;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    background-color: #f2f3f2;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+}
+
+#aside li{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    list-style: square;
+}
+
+/* Form Aside */
+#aside div label,
+#aside div input[type="text"],
+#aside div input[type="email"],
+#aside div input[type="password"],
+#aside div a{
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#aside div input[type="button"],
+#aside input[type="submit"],
+#aside button{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+#aside input,
+#aside label{
+    margin: 0 auto;
+    text-align: center;
+}
